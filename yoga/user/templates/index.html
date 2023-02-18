@@ -1,0 +1,36 @@
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-140144445-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-140144445-1');
+</script>
+
+
+{% extends "base.html" %}
+
+{% block title %}Index{% endblock %}
+
+{% block content %}
+  <center><div class="home-page">
+    <div class="hero">
+      <div class="container">
+          <div class="headline">
+            <h1>How's your yoga?</h1>
+
+            <h2>
+              Hello Yoga is a self-assistance yoga posture technique that help to improve your poses.  
+            </h2>
+
+            <p>
+              <a class="btn btn-primary round" href="/register" onclick="gtag('event','register',{'event_category':'button','event_label':'register_button', 'value':1});">Get started now</a>
+            </p>
+          </div>
+      </div>
+    </div>
+  </div></center>
+
+
+{% endblock %}
